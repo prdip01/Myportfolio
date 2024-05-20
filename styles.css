@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: linear-gradient(135deg, #ffcc33, #ff66cc, #66ccff);
+    background-size: 600% 600%;
+    animation: GradientBackground 30s ease infinite;
+}
+
+@keyframes GradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    background: rgba(197, 12, 248, 0.21);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+section {
+    padding: 2em 1em;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: bounceIn 1.5s ease-out;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    animation: slideInLeft 1s ease-out;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.skill-btn {
+    background: #fefdfdd4;
+    color: rgb(252, 36, 36);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease-out;
+}
+
+.skill-btn:hover {
+    transform: scale(1.1);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    animation: zoomIn 1s ease-out;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    background: #444;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s ease-out, transform 0.3s ease-out;
+}
+
+a:hover {
+    background: #666;
+    transform: scale(1.05);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    60% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+.skill-btn.active,
+.skill-btn:hover {
+    background: #666; /* Change to desired color */
+}
+.contact-btn {
+    background: #444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease-out, background 0.3s ease-out;
+}
+
+.contact-btn:hover {
+    background: #0077b5; 
+    transform: scale(1.1);
+}
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-btn {
+    background: #444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease-out, background 0.3s ease-out;
+}
+
+.social-btn:hover {
+    background: #0426ff; 
+    transform: scale(1.1);
+}
+
+.instagram {
+    background: #b70543; 
+}
+
+.github {
+    background: #03000e;
+}
+
+
+
+
